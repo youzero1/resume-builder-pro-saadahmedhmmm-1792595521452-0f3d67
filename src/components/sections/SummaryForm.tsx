@@ -1,5 +1,5 @@
-import FormTextarea from '../FormTextarea';
-import SectionCard from '../SectionCard';
+import { FormTextarea } from '../FormTextarea';
+import { SectionCard } from '../SectionCard';
 import { useResumeStore } from '@/store/resume-store';
 
 export default function SummaryForm() {
@@ -16,8 +16,8 @@ export default function SummaryForm() {
       title={resume.summary.customTitle}
       isVisible={resume.summary.isVisible}
       isExpanded={isExpanded}
-      onToggleExpanded={() => toggleSectionExpanded('summary')}
-      onToggleVisible={() => setSummaryVisible(!resume.summary.isVisible)}
+      onToggleExpand={() => toggleSectionExpanded('summary')}
+      onToggleVisibility={() => setSummaryVisible(!resume.summary.isVisible)}
       onDelete={() => setSummaryVisible(false)}
     >
       <FormTextarea

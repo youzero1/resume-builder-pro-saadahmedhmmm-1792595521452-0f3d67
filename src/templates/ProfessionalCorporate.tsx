@@ -1,5 +1,5 @@
 import { Resume } from '@/types/resume';
 
-export function ProfessionalCorporate({ resume }: { resume: Resume }) {
+export function ProfessionalCorporate(_props: { resume: Resume }) {
   return <div>Template rendering</div>;
 }

@@ -1,5 +1,5 @@
 import { Resume } from '@/types/resume';
 
-export function ElegantTwoColumn({ resume }: { resume: Resume }) {
+export function ElegantTwoColumn(_props: { resume: Resume }) {
   return <div>Template rendering</div>;
 }

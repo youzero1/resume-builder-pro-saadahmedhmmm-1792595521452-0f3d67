@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import FormInput from '../FormInput';
-import FormTextarea from '../FormTextarea';
-import SectionCard from '../SectionCard';
-import Button from '../Button';
+import { FormInput } from '../FormInput';
+import { FormTextarea } from '../FormTextarea';
+import { SectionCard } from '../SectionCard';
+import { Button } from '../Button';
 import { useResumeStore } from '@/store/resume-store';
 import { Trash2, Plus } from 'lucide-react';
 
@@ -50,8 +50,8 @@ export default function EducationForm() {
       title={resume.education.customTitle}
       isVisible={resume.education.isVisible}
       isExpanded={isExpanded}
-      onToggleExpanded={() => toggleSectionExpanded('education')}
-      onToggleVisible={() => setEducationVisible(!resume.education.isVisible)}
+      onToggleExpand={() => toggleSectionExpanded('education')}
+      onToggleVisibility={() => setEducationVisible(!resume.education.isVisible)}
       onDelete={() => setEducationVisible(false)}
     >
       <div className="space-y-4">

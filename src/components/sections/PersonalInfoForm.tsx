@@ -1,5 +1,5 @@
-import FormInput from '../FormInput';
-import SectionCard from '../SectionCard';
+import { FormInput } from '../FormInput';
+import { SectionCard } from '../SectionCard';
 import { useResumeStore } from '@/store/resume-store';
 
 export default function PersonalInfoForm() {
@@ -19,10 +19,10 @@ export default function PersonalInfoForm() {
       title="Personal Information"
       isVisible={true}
       isExpanded={isExpanded}
-      onToggleExpanded={() => toggleSectionExpanded('personal')}
-      onToggleVisible={() => {}}
+      onToggleExpand={() => toggleSectionExpanded('personal')}
+      onToggleVisibility={() => {}}
       onDelete={() => {}}
-      canDelete={false}
+      isLocked
     >
       <div className="space-y-4">
         <FormInput

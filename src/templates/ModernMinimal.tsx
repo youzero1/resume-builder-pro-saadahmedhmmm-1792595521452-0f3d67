@@ -1,5 +1,5 @@
 import { Resume } from '@/types/resume';
 
-export function ModernMinimal({ resume }: { resume: Resume }) {
+export function ModernMinimal(_props: { resume: Resume }) {
   return <div>Template rendering</div>;
 }

@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import FormInput from '../FormInput';
-import FormTextarea from '../FormTextarea';
-import SectionCard from '../SectionCard';
-import Button from '../Button';
+import { FormInput } from '../FormInput';
+import { FormTextarea } from '../FormTextarea';
+import { SectionCard } from '../SectionCard';
+import { Button } from '../Button';
 import { useResumeStore } from '@/store/resume-store';
 import { Trash2, Plus } from 'lucide-react';
 
@@ -44,8 +44,8 @@ export default function AwardsForm() {
       title={resume.awards.customTitle}
       isVisible={resume.awards.isVisible}
       isExpanded={isExpanded}
-      onToggleExpanded={() => toggleSectionExpanded('awards')}
-      onToggleVisible={() => setAwardsVisible(!resume.awards.isVisible)}
+      onToggleExpand={() => toggleSectionExpanded('awards')}
+      onToggleVisibility={() => setAwardsVisible(!resume.awards.isVisible)}
       onDelete={() => setAwardsVisible(false)}
     >
       <div className="space-y-4">

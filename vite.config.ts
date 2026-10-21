@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { tanstackRouter } from '@tanstack/router-plugin/vite';
+import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
@@ -15,7 +17,7 @@ const forceFullReload = {
 
 export default defineConfig({
   root: projectRoot,
-  plugins: [react(), forceFullReload],
+  plugins: [tanstackRouter(), react(), tailwindcss(), forceFullReload],
   resolve: {
     alias: { '@': path.join(projectRoot, 'src') },
   },

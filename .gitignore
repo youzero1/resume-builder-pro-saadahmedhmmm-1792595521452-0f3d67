@@ -5,3 +5,5 @@ dist
 !.env.example
 .npm-cache
 .cache
+src/routeTree.gen.ts
+vite.sprites-preview.config.ts

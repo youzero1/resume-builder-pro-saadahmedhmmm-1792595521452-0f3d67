@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import FormInput from '../FormInput';
-import FormTextarea from '../FormTextarea';
-import SectionCard from '../SectionCard';
-import Button from '../Button';
+import { FormInput } from '../FormInput';
+import { FormTextarea } from '../FormTextarea';
+import { SectionCard } from '../SectionCard';
+import { Button } from '../Button';
 import { useResumeStore } from '@/store/resume-store';
 import { Trash2, Plus } from 'lucide-react';
 
@@ -51,8 +51,8 @@ export default function ExperienceForm() {
       title={resume.experience.customTitle}
       isVisible={resume.experience.isVisible}
       isExpanded={isExpanded}
-      onToggleExpanded={() => toggleSectionExpanded('experience')}
-      onToggleVisible={() => setExperienceVisible(!resume.experience.isVisible)}
+      onToggleExpand={() => toggleSectionExpanded('experience')}
+      onToggleVisibility={() => setExperienceVisible(!resume.experience.isVisible)}
       onDelete={() => setExperienceVisible(false)}
     >
       <div className="space-y-4">

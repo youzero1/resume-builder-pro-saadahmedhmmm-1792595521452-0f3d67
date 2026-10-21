@@ -1,7 +1,7 @@
 import { useResumeStore } from '@/store/resume-store';
 
 interface PreviewPanelProps {
-  previewRef?: React.RefObject<HTMLDivElement>;
+  previewRef?: React.RefObject<HTMLDivElement | null>;
 }
 
 export function PreviewPanel({ previewRef }: PreviewPanelProps) {

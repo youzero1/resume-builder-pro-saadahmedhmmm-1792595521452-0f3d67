@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-lato: "Lato", sans-serif;
+}
 
 @layer base {
+  /* Tailwind v3 defaulted borders to gray-200; v4 defaults to currentColor.
+     Keep the old default so existing UI looks identical. */
+  *,
+  ::before,
+  ::after {
+    border-color: var(--color-gray-200);
+  }
+
   body {
     @apply font-lato text-black bg-white;
   }

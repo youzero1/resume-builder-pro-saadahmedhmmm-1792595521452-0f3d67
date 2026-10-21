@@ -49,7 +49,7 @@ export function RichText({ text, className: _className = '', linkClassName = 'te
  */
 export function renderRichText(
   text: string,
-  className?: string,
+  _className?: string,
 ): React.ReactNode {
   if (!text) return null;
 
